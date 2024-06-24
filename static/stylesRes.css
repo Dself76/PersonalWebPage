@@ -1,0 +1,22 @@
+body {
+    
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #c3ba98;
+    color: #333;
+}
+
+header, section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+h1, h2 {
+    color: #005
+}
+
+h2 {
+    font-family: "Papyrus", monospace; 
+}

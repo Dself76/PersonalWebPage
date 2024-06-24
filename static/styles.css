@@ -1,0 +1,60 @@
+
+body {
+    background-image: url('../images/matrix-2354492_1280.jpg');
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Avoid repeating the image */;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5rem; /* Makes the text larger */
+    font-weight: bold; /* Makes the text bold */
+    -webkit-text-fill-color: rgb(244, 242, 248);
+}
+
+h3 {
+    border: none;
+    background-color: aquamarine;
+    border-radius:25% ;
+    margin-left: 20px;
+    padding: 20px;
+    position: relative;
+    z-index: 5;
+    font-size: 1rem; /* Makes the text larger */
+    font-weight: bold; /* Makes the text bold */
+    -webkit-text-fill-color: rgb(4, 1, 9);
+
+   
+}
+
+h2 {
+    position: relative;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 2rem; /* Makes the text larger */
+    font-weight: bold; /* Makes the text bold */
+    -webkit-text-fill-color: rgb(244, 242, 248);
+}
+.resume-item {
+    margin-left: 50px; /* Add some spacing between the items */
+}
+
+.resume-item:hover {
+    color: rgb(213, 12, 12); /* works on the github link too. */
+    -webkit-text-fill-color: rgb(213, 12, 12);
+}
+
+.resume-item, .resume-item:visited {
+    margin-left: 50px; /* Add some spacing between the items */
+    text-decoration: none; /* Removes underline from the link */
+    color: rgb(244, 242, 248); /* Standard color */
+    -webkit-text-fill-color: rgb(244, 242, 248); /* WebKit-specific color */
+
+    display: inline-block; /* Ensures the items line up correctly */
+}
+/* had to put this in because the hover was being block on this element and i need to fig why*/
+.resume-item[href*="github"]:hover {
+    color: rgb(213, 12, 12);
+    -webkit-text-fill-color: rgb(213, 12, 12);
+}
