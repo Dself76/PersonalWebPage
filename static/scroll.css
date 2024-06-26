@@ -1,0 +1,71 @@
+/* General Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: aquamarine; /* Background color of the page */
+}
+
+/* Scroll Container Styles */
+.scroll-container {
+    display: flex;
+    align-items: center; /* Center cards vertically */
+    white-space: nowrap;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    overflow-y: hidden; /* Prevent vertical scrolling */
+    z-index: 1000; /* Ensure it stays on top */
+    background: transparent; /* No background */
+}
+
+/* Card Styles */
+.card {
+    display: inline-block;
+    width: 200px; /* Only as wide as the text + padding */
+    padding: 0 10px; /* Padding around text */
+    height: 100px;
+    line-height: 100px; /* Center text vertically */
+    text-align: center;
+    color: #df7c1f; /* White text color for better visibility */
+    font-weight: bold;
+    cursor: pointer;
+    background: none; /* No background */
+    border: none; /* No borders */
+    box-shadow: none; /* Remove shadow */
+    transition: transform 0.3s ease;
+    white-space: nowrap; /* Keep text on one line */
+    animation: scroll-left 10s linear infinite; /* Animation for continuous scroll */
+}
+
+@keyframes scroll-left {
+    from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+/* Link Styles within Cards */
+.card a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    height: 100%;
+    line-height: 100px;
+    transition: color 0.3s;
+}
+
+.card a:hover {
+    color: #ff0000; /* Change color on hover */
+}
+
+/* Visibility Transition Styles */
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease; /* Smooth transition for hiding */
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s ease; /* Smooth transition for showing */
+}

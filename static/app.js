@@ -18,11 +18,15 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollContainer.appendChild(newCard);
     }
 
+    let itemCount = numberOfCards; // Start count based on initial cards
 
-    let itemCount = 0;
-    // Function to add cards continuously
-    
+    // Function to add cards up to a maximum limit
+    function addCards() {
+        if (itemCount < 10) { // Set the limit of cards here
+            itemCount++;
+            const newCard = createCard(itemCount);
+            scrollContainer.appendChild(newCard);
+        }
+    }
+   
 
-    // Add more cards periodically to simulate continuous scrolling
-    setInterval(addCards, 10); // Adjust timing to match CSS animation
-});

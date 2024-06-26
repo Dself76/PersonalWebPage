@@ -5,23 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="../static/styles.css">
+    <link rel="stylesheet" href="../static/scroll.css">
+  
   
 
   
     <title>DennisSelfingerjr.</title><!-- this line has the animation/makes it jiggle-->
 </head>
 <body>
-    <h1>
-        <p class="animate__animated animate__swing"><bold>DENNIS SELFINGER</bold></p>
-    </h1>
+    <h1 class="container">
+        <span class="left animate__animated animate__slideInLeft">DENNIS</span>
+        <span class="right animate__animated animate__slideInRight">SELFINGER</span>
+    </h1> 
     <br>
     <main>
         <h2>
-            <h2>
+           
+            <!--just leaving all the classes resume-item for now to make it easier for me since it just me-->
                 <a href="../templates/resume.html" class="resume-item">RESUME</a>
                 <a href="https://github.com/Dself76" class="resume-item" target="_blank">GITHUB</a>
-                <a href="../templates/tetris.html" class="tetris-item" target="_blank">TETRIS GAME</a>
-            </h2>
+                <a href="../templates/tetris.html" class="resume-item" target="_blank">TETRIS</a>
+                
+                   
+            </a>
+            
+            
             
         </h2>
         <br>
@@ -37,9 +45,75 @@
                 I’m actively seeking entry-level or internship opportunities in IT to further develop my expertise and contribute to innovative projects. Let's connect and see how we can make an impact together!
         </p>
         </h3>
+        <div class="scroll-container">
+            <div class="card ">OOP</div>
+            <div class="card ">Recursion</div>
+            <div class="card ">Python</div>
+         <div class="card ">Discrete Math</div>
+        <div class="card ">Function Programming</div>
+        <div class="card ">Agile Development</div>
+        <div class="card ">Meta Front End Cert</div>
+        <div class="card ">Meta Back End</div>
+        <div class="card ">Java</div>  
+        <div class="card ">Driven</div> 
+    </div>
+    <br>
+    <br><br><br>
+    <div class="projects">
+        <h2>
+            PROJECTS I HAVE COMPLETED AND ARE WORKING ON
+        </h2>
+        <h3 class="passwordMan">
+            <section id="green_text">
+            <b>Project Name:</b> Simple Password Manager<br><br>
+        </section>
+            <b>Language:</b> C++<br><br>
         
-        </div>
+            <b>Project Overview:</b><br>
+            The Simple Password Manager is a C++ application designed to securely store and manage user passwords. This project aims to provide a basic yet effective solution for handling password storage with a focus on simplicity and security. It demonstrates the fundamental concepts of file handling, encryption, and user authentication in C++.<br><br>
+        
+            <b>Features:</b><br>
+            1. <b>Password Storage:</b> Securely store passwords with associated usernames and services.<br>
+            2. <b>Encryption:</b> Implement basic encryption techniques to protect stored passwords.<br>
+            3. <b>User Authentication:</b> Ensure that only authorized users can access the stored passwords.<br>
+            4. <b>Command-Line Interface:</b> Simple and intuitive command-line interface for user interactions.<br><br>
+        
+            <b>Project Structure:</b><br>
+            - <b>main.cpp:</b> The main entry point of the application.<br>
+            - <b>PasswordManager.cpp:</b> Contains the core functionality of the password manager, including methods for adding, retrieving, and encrypting passwords.<br>
+            - <b>PasswordManager.h:</b> Header file defining the PasswordManager class and its methods.<br>
+            - <b>PasswordManager.sln:</b> Visual Studio solution file for the project.<br>
+            - <b>PasswordManager.vcxproj:</b> Visual Studio project file.<br>
+            - <b>PasswordManager.vcxproj.filters:</b> Filters file for organizing the project files in Visual Studio.<br>
+            - <b>PasswordManager.vcxproj.user:</b> User-specific settings for the Visual Studio project.<br><br>
+        
+            <b>Development Environment:</b><br>
+            - Developed using Visual Studio, leveraging its robust development tools and debugging features.<br>
+            - The project is configured to build and run in a Debug configuration on a 64-bit Windows environment.<br><br>
+        
+            <b>How to Run:</b><br>
+            1. Open the PasswordManager.sln solution file in Visual Studio.<br>
+            2. Build the project using the provided solution configuration.<br>
+            3. Run the compiled executable to start the password manager.<br><br>
+        
+            <b>Usage:</b><br>
+            - <b>Add Password:</b> Store a new password with the associated username and service name.<br>
+            - <b>Retrieve Password:</b> Retrieve stored passwords by providing the service name.<br>
+            - <b>Encrypt/Decrypt:</b> Basic encryption and decryption functionalities to secure stored passwords.<br><br>
+        
+            <b>This project helped me with the following Learning Outcomes:</b><br>
+            - Understanding of file handling in C++.<br>
+            - Implementation of basic encryption techniques.<br>
+            - Experience with user authentication mechanisms.<br>
+            - Familiarity with developing and debugging C++ applications in Visual Studio.<br><br>
+        
+            
+           
+        </h3>
+        
+
+    
     </main>
-   
+    <script src="../static/app.js" defer></script> 
 </body>
 </html>
