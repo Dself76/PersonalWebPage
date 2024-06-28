@@ -1,5 +1,9 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+NO:wght@100..400&display=swap');
+
 body {
+    font-family: 'Josefin Sans', sans-serif;
     background-image: url('../images/matrix-2354492_1280.jpg');
     background-size: cover;
     background-position: center;
@@ -30,6 +34,7 @@ h1 {
 }
 
 .Intro {
+   
     border: none;
     background-color: aquamarine;
     border-radius: 25%;
@@ -60,14 +65,10 @@ h2 {
 
 .resume-item:hover,
 .resume-item:visited {
-    color: rgb(213, 12, 12); /* Works on the GitHub link too */
+    color: rgb(245, 241, 241); /* Works on the GitHub link too */
 }
 
-.passwordMan {
-    text-align: center;
-    background-color: antiquewhite;
-    padding: 20px; /* Add padding for better appearance */
-}
+
 
 main {
     padding-bottom: 150px; /* This will give it space for the fixed scroll container so it doesn't overlap my scroll */
@@ -124,8 +125,8 @@ h2 {
 }
 
 .resume-item:hover {
-    color: rgb(213, 12, 12); /* works on the github link too. */
-    -webkit-text-fill-color: rgb(213, 12, 12);
+    color: rgb(248, 239, 239); /* works on the github link too. */
+    -webkit-text-fill-color: rgb(252, 244, 244);
 }
 
 .resume-item, .resume-item:visited {
@@ -139,8 +140,8 @@ h2 {
 /* had to put this in because the hover was being block on this element and i need to fig why
 they all are the class hover should work but its not maybe cache or webkit I am aware this a little much*/
 .resume-item[href*="github"]:hover {
-    color: rgb(213, 12, 12);
-    -webkit-text-fill-color: rgb(213, 12, 12);
+    color: rgb(241, 16, 16);
+    -webkit-text-fill-color: rgb(238, 29, 29);
 }
 
 .resume-item[href*="resume"]:hover {
@@ -159,19 +160,61 @@ main {
     to look into this*/
     background-size: cover; /* Cover the entire main area */
 }
-.passwordMan {
-    text-align: center;
-    background: rgba(0, 0, 0, 0.7);  /*Semi-transparent black for better readability */
-    color: #fff; /* White text color for better visibility */
-    padding: 20px 10px;
-    margin: 20px 0; /* Add some vertical spacing */
-    max-width: 30%;
-    margin-left: 60%;
-    
-    text-align: center;
-   
-  
+.projects {
+    max-width: 1200px;
+    margin: 0 auto;
+    ;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /*background: url('../images/matrixEye.png') no-repeat center center;*/
+    background-size: cover;
 }
+
+#projectsColor {
+    color:rgb(246, 232, 232);
+}
+.projects h2 {
+    text-align: center;
+    color: #5c85d6;
+}
+
+.projects-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.project {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container1 {
+    margin-bottom: 20px;
+}
+
+.project-title {
+    color: #5c85d6;
+}
+
+.project-subtitle {
+    color: #5c85d6;
+}
+
+.project-subsubtitle {
+    color: #5c85d6;
+}
+
 #green_text {
     color: rgb(228, 94, 17);
+}
+
+#trading_bot {
+    margin-top: 100%;
+    margin-right: 20px;
 }

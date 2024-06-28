@@ -3,28 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TetrisGame</title>
-
- <link rel="stylesheet" href="../static/tetris.css">
-
+    <title>Tetris Game</title>
+    <link rel="stylesheet" href="../static/tetris.css">
 </head>
 <body>
-    <sec class="left-side">
-        Still working on making the button function.
-        <br>
-        for now the keyboard arrows left, right, down<br>
-        I know this is nothing to be to proud of but I just started 
-        learning to code about 3 months ago
-        
-    </sec>
+    <section class="left-side">
+        <p>I know this is nothing to be too proud yet, just wanted to work on functionality first, so mouse does not work yet so use arrows, and working on switching themes, I still learning to code.</p>
+        <p>Use the keyboard arrows left, right, down or use the buttons below.</p>
+        <button onclick="changeTheme('classic')">Classic Theme</button>
+        <button onclick="changeTheme('neon')">Neon Theme</button>
+    </section>
+    <h3 class="info">Use arrows for now please still working on mouse</h3>
     <main>
-    <canvas id="gameCanvas" width="300" height="600"></canvas>
-    <div id="controls">
-        <button id="leftBtn">Left</button>
-        <button id="rightBtn">Right</button>
-        <button id="downBtn">Down</button>
-    </div>
+        <canvas id="gameCanvas" width="300" height="600"></canvas>
+        <div id="controls">
+            <button id="leftBtn">Left</button>
+            <button id="rightBtn">Right</button>
+            <button id="downBtn">Down</button>
+        </div>
     </main> 
-    <script src="../static/scripts.js"></script> <!-- JavaScript link in head -->
+    <script src="../static/scripts.js"></script>
 </body>
 </html>

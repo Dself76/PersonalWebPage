@@ -3,16 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../static/prac.css">
+    <title>Two Columns Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .column {
+            width: 48%;
+        }
+        h1, h2, h3 {
+            color: #5c85d6;
+        }
+        b {
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-  <div class="scroll-container">
-    <div class="card hidden">Item 1</div>
-    <div class="card hidden">Item 2</div>
-    <div class="card hidden">Item 3</div>
-</div>
-<script src="../static/app.js" defer></script> 
+    <div class="container">
+        <div class="column">
+            <h1>SocioPedia - A Comprehensive Social Media Platform</h1>
+            <p><b>Description:</b><br>
+            SocioPedia is an innovative social media platform designed to connect users through various interactive features. It allows users to register and create profiles, participate in public and private voting on diverse topics, engage in discussions, and form groups for personalized interactions. Whether it’s voting on the latest political issues, choosing the best place to hang out with friends, or discussing current events, SocioPedia provides a dynamic and inclusive environment for all users.</p>
 
+            <h2>Features:</h2>
+            <h3><b>User Registration and Profiles:</b></h3>
+            <ul>
+                <li><b>Sign Up Form:</b> Users can create their profiles by providing essential details such as first name, last name, email, password, sex, country, state, and county.</li>
+                <li><b>Secure Login:</b> User credentials are securely stored, and passwords are hashed to ensure privacy and security.</li>
+            </ul>
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>SocioPedia Project Explanation</title>
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        line-height: 1.6;
+                        background-color: #f4f4f9;
+                        color: #333;
+                        padding: 20px;
+                    }
+                    .container {
+                        max-width: 800px;
+                        margin: 0 auto;
+                        background: #fff;
+                        padding: 20px;
+                        border-radius: 8px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    }
+                    h1, h2, h3 {
+                        color: #5c85d6;
+                    }
+                    b {
+                        font-weight: bold;
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="container">
+                    <h1>SocioPedia - A Comprehensive Social Media Platform</h1>
+            
+                    <p><b>Description:</b><br>
+                    SocioPedia is an innovative social media platform designed to connect users through various interactive features. It allows users to register and create profiles, participate in public and private voting on diverse topics, engage in discussions, and form groups for personalized interactions. Whether it’s voting on the latest political issues, choosing the best place to hang out with friends, or discussing current events, SocioPedia provides a dynamic and inclusive environment for all users.</p>
+            
+                    <h2>Features:</h2>
+            
+                    <h3><b>User Registration and Profiles:</b></h3>
+                    <ul>
+                        <li><b>Sign Up Form:</b> Users can create their profiles by providing essential details such as first name, last name, email, password, sex, country, state, and county.</li>
+                        <li><b>Secure Login:</b> User credentials are securely stored, and passwords are hashed to ensure privacy and security.</li>
+                    </ul>
+            
+                    <h3><b>Voting and Polls:</b></h3>
+                    <ul>
+                        <li><b>Daily Topics:</b> Users can vote on daily trending topics displayed on the homepage, such as political polls, sports predictions, and entertainment preferences.</li>
+                        <li><b>Group Polls:</b> Users can create groups (friends, family, business) and initiate private or public polls within these groups. This feature is ideal for making decisions like choosing a restaurant, planning outings, or any other group activities.</li>
+                        <li><b>Custom Polls:</b> Individuals can create custom polls about any topic of their interest and share them within their groups for voting.</li>
+                    </ul>
+            
+                    <h3><b>Discussion and Comments:</b></h3>
+                    <ul>
+                        <li><b>Comment Section:</b> Users can post comments on various topics, engage in discussions, and share their views.</li>
+                        <li><b>Trending Topics:</b> A sidebar on the homepage highlights trending topics and current events, encouraging users to participate in ongoing discussions.</li>
+                    </ul>
+            
+                    <h3><b>Group Creation and Management:</b></h3>
+                    <ul>
+                        <li><b>Personal Groups:</b> Users can form personal groups with friends, family, or colleagues.</li>
+                        <li><b>Group Voting:</b> Within these groups, users can create and vote on polls, with options for public visibility or private voting.</li>
+                    </ul>
+            
+                    <h3><b>Interactive User Interface:</b></h3>
+                    <ul>
+                        <li><b>Modern Design:</b> The platform features a user-friendly interface with a modern design, ensuring a seamless user experience.</li>
+                        <li><b>Responsive Layout:</b> The layout is responsive and works well on both desktop and mobile devices.</li>
+                    </ul>
+            
+                    <h3><b>Search and Autocomplete:</b></h3>
+                    <ul>
+                        <li><b>User Search:</b> A search feature allows users to locate other users by entering usernames or keywords.</li>
+                        <li><b>Autocomplete Function:</b> The platform provides real-time suggestions as users type in the search bar, making it easier to find connections.</li>
+                    </ul>
+            
+                    <h3><b>Backend and Database:</b></h3>
+                    <ul>
+                        <li><b>Flask Framework:</b> The backend is developed using Flask, a lightweight and flexible Python web framework.</li>
+                        <li><b>MySQL Database:</b> User data and posts are stored in a MySQL database, ensuring efficient data management and retrieval.</li>
+                        <li><b>RESTful APIs:</b> The backend includes RESTful APIs for handling user registration, post submission, and data retrieval.</li>
+                    </ul>
+            
+                    <h3><b>Technologies Used:</b></h3>
+                    <ul>
+                        <li><b>Frontend:</b> HTML, CSS, JavaScript</li>
+                        <li><b>Backend:</b> Python, Flask</li>
+                        <li><b>Database:</b> MySQL</li>
+                        <li><b>APIs:</b> RESTful APIs</li>
+                        <li><b>Additional Libraries:</b> NLTK, SpaCy, Hugging Face Transformers for NLP tasks</li>
+                        <li><b>Environment Management:</b> dotenv for environment variables</li>
+                    </ul>
+            
+                    <h3><b>Conclusion:</b></h3>
+                    <p>SocioPedia is more than just a social media platform; it is a community where users can freely express their opinions, make collective decisions, and stay informed about current events. Its diverse set of features caters to the needs of different user groups, making it a versatile and engaging platform for everyone.</p>
+            
+                    <h3><b>Demo and Source Code:</b></h3>
+                    <ul>
+                        <li><b>Live Demo:</b> <a href="#">SocioPedia Demo</a></li>
+                        <li><b>GitHub Repository:</b> <a href="#">SocioPedia Source Code</a></li>
+                    </ul>
+                </div>
+            </body>
+            </html>
+            
+            <!-- Other content sections for the first project can go here -->
+        </div>
+        
+        <div class="column">
+            <h1>Another Project Title</h1>
+            <p><b>Description:</b><br>
+            This project is designed to achieve XYZ. It incorporates various technologies and methodologies to provide a robust solution for ABC problems.</p>
+
+            <h2>Features:</h2>
+            <h3><b>Key Functionalities:</b></h3>
+            <ul>
+                <li><b>Feature One:</b> Description of feature one.</li>
+                <li><b>Feature Two:</b> Description of feature two.</li>
+            </ul>
+
+            <!-- Other content sections for the second project can go here -->
+        </div>
+    </div>
 </body>
 </html>
